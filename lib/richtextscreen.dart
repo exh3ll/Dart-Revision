@@ -16,7 +16,7 @@ class RichTextScreen extends StatelessWidget {
               TextSpan(
                 text: 'H',
                 style: TextStyle(
-                  color: Colors.red,
+                  color: Colors.yellow,
                   fontWeight: FontWeight.bold,
                 ),
               ),
