@@ -4,11 +4,13 @@ import 'simpleinterest.dart';
 import 'areaofcircle.dart';
 import 'palindrome.dart';
 import 'richtextscreen.dart';
-import 'borderdesign.dart'; // <-- ADD THIS
+import 'borderdesign.dart';
+import 'flutterlayoutscreen.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
 
+  // FIXED: Removed the extra unused parameter
   Widget button(BuildContext context, String text, Widget page) {
     return SizedBox(
       width: double.infinity,
@@ -28,7 +30,7 @@ class Dashboard extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
-          children: [
+          children: <Widget>[
             button(context, 'Arithmetic', const ArithmeticScreen()),
             button(context, 'Simple Interest', const SimpleInterestScreen()),
             button(context, 'Area of Circle', const AreaCircleScreen()),
@@ -38,6 +40,11 @@ class Dashboard extends StatelessWidget {
               context,
               'Border Design Example',
               const BorderDesignScreen(),
+            ),
+            button(
+              context,
+              'Flutter Layout Screen',
+              const FlutterLayoutScreen(),
             ),
           ],
         ),
