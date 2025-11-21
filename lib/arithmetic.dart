@@ -29,9 +29,9 @@ class _ArithmeticScreenState extends State<ArithmeticScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Arithmetic')),
+      appBar: AppBar(title: const Text('Arithmetic'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(

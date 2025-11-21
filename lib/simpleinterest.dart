@@ -25,9 +25,9 @@ class _SimpleInterestScreenState extends State<SimpleInterestScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Simple Interest')),
+      appBar: AppBar(title: const Text('Simple Interest'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(

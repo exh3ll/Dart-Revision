@@ -28,7 +28,10 @@ class FlutterLayoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Flutter Layout Screen")),
+      appBar: AppBar(
+        title: const Text("Flutter Layout Screen"),
+        centerTitle: true,
+      ),
       body: Center(
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),

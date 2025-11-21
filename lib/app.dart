@@ -6,6 +6,7 @@ import 'palindrome.dart';
 import 'richtextscreen.dart';
 import 'borderdesign.dart';
 import 'flutterlayoutscreen.dart';
+import 'columnscreen.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -115,6 +116,12 @@ class Dashboard extends StatelessWidget {
               'Border Design',
               Icons.border_all,
               const BorderDesignScreen(),
+            ),
+            dashboardCard(
+              context,
+              'Column Screen',
+              Icons.view_column,
+              const ColumnScreen(),
             ),
             dashboardCard(
               context,

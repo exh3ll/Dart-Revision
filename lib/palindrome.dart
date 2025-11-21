@@ -22,9 +22,9 @@ class _PalindromeScreenState extends State<PalindromeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Palindrome Number')),
+      appBar: AppBar(title: const Text('Palindrome Number'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(

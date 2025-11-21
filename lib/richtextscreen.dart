@@ -6,9 +6,9 @@ class RichTextScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Rich Text Example')),
+      appBar: AppBar(title: const Text('Rich Text Example'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: RichText(
           text: const TextSpan(
             style: TextStyle(fontSize: 24, color: Colors.black),

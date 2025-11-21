@@ -22,9 +22,9 @@ class _AreaCircleScreenState extends State<AreaCircleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Area of Circle')),
+      appBar: AppBar(title: const Text('Area of Circle'), centerTitle: true),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(
